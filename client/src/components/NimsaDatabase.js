@@ -1,29 +1,22 @@
-import React from 'react';
-import {useNavigate} from 'react-router-dom';
-
-const Publish = () => {
-    const navigate = useNavigate();
-    return (
-            <>
-        <div className='lg:flex w-11/12 max-w-full my-0 mx-auto'>
+const NimsaDatabase =() => {
+    return(
+       <>
+       <div className='md:hidden lg:hidden rounded-lg py-2 w-11/12 max-w-full my-0 mx-auto flex justify-between items-center mt-4'>
+          <div><input type='search' placeholder='Search Nimsa Journal' className='px-3 outline-none rounded-lg py-1 border' /></div>
+          <div className='py-1 px-4 font-bold text-lg bg-black text-white rounded-lg'>+</div>
+       </div>
+       <div className='lg:flex w-11/12 max-w-full my-0 mx-auto'>
            <div className='lg:w-1/2 lg:mr-2'>
-               <div className='text-white font-semibold text-lg bg-black py-3 rounded-lg mt-4'><h1 className='ml-4'>Publish your paper</h1></div>
-               <div className='lg:flex md:flex mt-3 lg:mt-6 bg-gray-100'>
-                   <div className='px-4 py-6'>
-                       <h1 className='font-bold font-sans text-lg mb-2'>Guidelines for submission.</h1>
-                       <p className='text-sm tracking-wider text-semibold'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscingf elit. Nunc adio in et, lectus sit lorem id integer
-                         Lorem ipsum dolor sit amet, consectetur adipiscingf elit. Nunc adio in et, lectus sit lorem id integer 
-                         Lorem ipsum dolor sit amet, consectetur adipiscingf elit. Nunc adio in et, lectus sit lorem id integer
-                         Lorem ipsum dolor sit amet, consectetur adipiscingf elit. Nunc adio in et, lectus sit lorem id integer
-                       </p>
+               <div className='text-white font-semibold text-xl bg-black py-4 rounded-lg mt-4'><h1 className='ml-4'>Nimsa Database</h1></div>
+               <div className='lg:flex md:flex mt-3 lg:mt-6'>
+                   <div className='bg-gray-100 mb-3  lg:mr-2 md:w-1/2 lg:w-1/2 flex justify-center items-center py-2 lg:px-3 rounded-lg  shadow-sm m-4'>
+                      <div className='m-2'><img src='./database.png' alt='home' /></div>
                    </div>
-                   
+                   <div className='bg-gray-100 mt-3 lg:ml-2 md:w-1/2 lg:w-1/2 flex justify-center items-center py-2 lg:px-3 rounded-lg  shadow-sm m-4'>
+                       <div className='m-2'><img src='./database2.png' alt='home' /></div>
+                   </div>
                </div>
-               <div className='flex justify-between my-5'>
-                   <button className='rounded-lg text-white bg-green-600 font-semibold shadow-md py-2 px-4' onClick={() => {navigate('/publish-edit')}}>Continue</button>
-                   <button  className='rounded-lg text-white bg-black font-semibold shadow-md py-2 px-4'>Track your paper</button>
-               </div>
+               <div className='text-white font-semibold py-2 px-3 rounded-lg bg-green-600 lg:w-1/2 md:w-1/2 flex justify-center items-center mt-4'>Call For Submissions</div>
            </div>
 
            <div className='lg:w-1/2 lg:ml-2'>
@@ -75,8 +68,8 @@ const Publish = () => {
            <h1 className='text-xl text-white font-bold mb-2'>Follow us:</h1>
            <p className='text-thin text-sm font-sans text-white mt-2'>@ 2022 NIMSA JOURNALS. All rights reserved.</p>
        </div>
-            </>
+       </>
     )
 }
 
-export default Publish;
+export default NimsaDatabase;
